@@ -1,6 +1,10 @@
-# Frontend Bundle
+# EhannFrontendBundle
 
-The Ehann Frontend bundle provides base Twig layouts and various client side assets for Symfony2 applications.
+Twitter Bootstrap-ready frontend and layout bundle for Symfony2.
+
+## Related Bundles
+
+<a href="https://github.com/ethanhann/EhannNotificationBundle">EhannNotificationBundle</a>
 
 ## Installation
 
@@ -45,7 +49,8 @@ imports:
 
 ### Composer Repositories
 
-Composer repositories can only be defined in the root application's composer.json file. Add these respoistories to your application's composer.json file:
+Composer repositories can only be defined in the root application's composer.json file.
+Add these respoistories to your application's composer.json file:
 
 ```js
 // composer.json
@@ -98,7 +103,7 @@ Composer repositories can only be defined in the root application's composer.jso
 
 ## Config
 
-Config setting sets the default layout template. This makes the template the default layout for all bundles in the application.
+Specify the global default layout template for all bundles in your application.
 
 ```yaml
   ehann_html_base:
