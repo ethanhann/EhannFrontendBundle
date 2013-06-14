@@ -1,0 +1,9 @@
+parameters:
+    ehann_html_base.twig.extension.class: Ehann\FrontendBundle\DependencyInjection\EhannFrontendTwigExtension
+
+services:
+    ehann_html_base.twig.extension:
+        class: %ehann_html_base.twig.extension.class%
+        arguments: [ @service_container ]
+        tags:
+          - { name: twig.extension }

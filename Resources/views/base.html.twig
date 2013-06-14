@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"> <!--<![endif]-->
+<head {% block html_attributes %}lang="en"{% endblock %}>
+    <meta charset="{% block charset %}utf-8{% endblock %}">
+    <meta http-equiv="X-UA-Compatible" content="{% block xua_content %}IE=edge,chrome=1{% endblock %}">
+    <title>{% block document_title %}{% endblock %}</title>
+    <meta name="description" content="{% block document_description %}{% endblock %}">
+    {% block favicon %}
+        <link rel="shortcut icon" href="{{ asset('bundles/ehannfrontend/img/favicon.png') }}" type="image/png" />
+    {% endblock %}
+    {% block metadata %}
+        <meta name="viewport" content="width=device-width">
+    {% endblock %}
+
+    {% block stylesheets %}{% endblock %}
+
+    {% block header_javascript %}
+        {% javascripts output='js/*.js'
+            '@modernizr_js'
+        %}
+        <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    {% endblock %}
+</head>
+<body {% block body_attributes %}{% endblock %}>
+{% block body_content %}
+
+{% block header %}
+    <header>
+        {% block header_content %}
+            {% block sitesearch %}{% endblock sitesearch %}
+        {% endblock header_content %}
+    </header>
+{% endblock header %}
+
+{% block nav %}
+    <nav>{% block nav_content %}{% endblock nav_content %}</nav>
+{% endblock nav %}
+
+{% block content_container %}
+    <div>{% block content %}{% endblock content %}</div>
+{% endblock content_container %}
+
+{% block footer %}
+    <footer>{% block footer_content %}{% endblock footer_content %}</footer>
+{% endblock footer %}
+
+{% block footer_javascript %}{% endblock footer_javascript %}
+
+{% endblock body_content %}
+</body>
+</html>

@@ -1,0 +1,35 @@
+{
+    "name": "ehann/frontend-bundle",
+    "description": "Provides frontend resources.",
+    "version": "0.0.0",
+    "keywords": ["html", "base", "boilerplate", "Symfony2", "bundle"],
+    "homepage": "http://ethanhann.org",
+    "authors": [
+        {
+            "name": "Ethan Hann",
+            "email": "ethanhann@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "twig/extensions": "1.0.*@dev",
+        "leafo/lessphp": "*",
+        "leafo/scssphp": "*",
+        "yui/yui-compressor": "*",
+        "makeusabrew/bootbox": "*",
+        "tarruda/bootstrap-datetimepicker": "*",
+        "ptachoire/cssembed": "1.*",
+        "components/jquery": "1.10.*",
+        "components/bootstrap": "2.3.*",
+        "components/font-awesome": "3.2.*",
+        "components/modernizr": "2.6.2"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": ">=2.*"
+    },
+    "autoload": {
+        "psr-0": { "Ehann\\FrontendBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Ehann/FrontendBundle"
+}

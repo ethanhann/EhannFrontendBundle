@@ -1,0 +1,62 @@
+{% extends 'EhannFrontendBundle:layouts:bootstrap.html.twig' %}
+
+{% block document_title %}My Site{% endblock %}
+{% block document_description %}My site's description.{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block header_navbar_inner %}
+    <a class="brand" href="/">My Site</a>
+    {{ parent() }}
+{% endblock %}
+
+{% block sitesearch %}
+    <form method="get" action="#" class="navbar-search form-search pull-right">
+        <div class="input-append">
+            <input name="q" class="search-query" id="sitesearch-keyword" type="text" size="20" maxlength="256" placeholder="Search keywords...">
+            <button id="submit" type="submit" name="btnG" type="submit" class="btn">Search</button>
+        </div>
+    </form>
+{% endblock %}
+
+{% block jumbotron_content %}
+        <h1>Hero Header</h1>
+        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <p><a class="btn btn-primary btn-large">LARGE BUTTON HERE &raquo;</a></p>
+{% endblock %}
+
+{% block nav_content %}
+    <ul class="nav">
+        <li class="active"><a href="#">Hello</a></li>
+        <li><a href="#">Nav</a></li>
+        <li><a href="#">Links</a></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div>
+            <div class="span4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div>
+            <div class="span4">
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn" href="#">View details &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer_content %}
+    <p>&copy; 2013 Copyright</p>
+{% endblock %}

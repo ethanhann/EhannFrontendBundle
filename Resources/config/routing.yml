@@ -1,0 +1,3 @@
+ehannfrontendbundle_bootstrap:
+  pattern: /bootstrap
+  defaults: { _controller: EhannFrontendBundle:Default:bootstrap }

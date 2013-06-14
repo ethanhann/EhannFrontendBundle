@@ -1,0 +1,61 @@
+{% extends 'EhannFrontendBundle::base.html.twig' %}
+
+{% block stylesheets %}
+    {% stylesheets combine=true filter='cssrewrite'
+    '@bootstrap_css'
+    'bundles/ehannfrontend/font-awesome/font-awesome.css'
+    %}
+    <link href="{{ asset_url }}" type="text/css" rel="stylesheet"/>
+    {% endstylesheets %}
+{% endblock %}
+
+{% block header_javascript %}
+    {% javascripts '@jquery_js' '@bootstrap_js' '@bootbox_js' '@bootstrap_datetimepicker_js' combine=true %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block header %}
+    <header class="header">
+    {% block header_content %}
+            <div class="navbar navbar-static-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        {% block header_navbar_inner %}
+                            {% block sitesearch %}{% endblock sitesearch %}
+                        {% endblock header_navbar_inner %}
+                    </div>
+                </div>
+            </div>
+    {% endblock %}
+    </header>
+    {% block jumbotron %}
+        <div class="hero-unit">
+            <div class="container">{% block jumbotron_content %}{% endblock jumbotron_content %}</div>
+        </div>
+    {% endblock jumbotron %}
+{% endblock %}
+
+{% block nav %}
+    <div class="container">
+        <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    {% block nav_content %}{% endblock nav_content%}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock nav %}
+
+{% block content_container %}
+    <div class="container">{% block content %}{% endblock content %}</div>
+{% endblock content_container %}
+
+{% block footer %}
+<footer>
+    <div class="container">
+    {% block footer_content %}{% endblock %}
+    </div>
+</footer>
+{% endblock %}

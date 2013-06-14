@@ -1,0 +1,46 @@
+assetic:
+    debug:          "%kernel.debug%"
+    use_controller: false
+    bundles:        [ EhannFrontendBundle, TwigBundle ]
+    java: /usr/bin/java
+    filters:
+      phpcssembed: ~
+      yui_css:
+        jar: %kernel.root_dir%/../vendor/yui/yui-compressor/build/yuicompressor-2.4.7.jar
+      yui_js:
+        jar: %kernel.root_dir%/../vendor/yui/yui-compressor/build/yuicompressor-2.4.7.jar
+      closure: ~
+      lessphp:
+        apply_to: "\.less$"
+      scssphp:
+        apply_to: ["\.scss$","\.sass$"]
+      cssrewrite: ~
+    assets:
+      jquery_js:
+          inputs:
+              - '%kernel.root_dir%/../components/jquery/jquery.js'
+          filters: [yui_js]
+      bootstrap_js:
+          inputs:
+              - '%kernel.root_dir%/../components/bootstrap/js/bootstrap.js'
+          filters: [yui_js]
+      bootbox_js:
+          inputs:
+              - '%kernel.root_dir%/../vendor/makeusabrew/bootbox/bootbox.js'
+          filters: [yui_js]
+      bootstrap_datetimepicker_js:
+          inputs:
+              - '%kernel.root_dir%/../vendor/tarruda/bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js'
+          filters: [yui_js]
+      modernizr_js:
+          inputs:
+              - '%kernel.root_dir%/../components/modernizr/modernizr.js'
+          filters: [yui_js]
+      bootstrap_css:
+          inputs:
+              - '%kernel.root_dir%/../components/bootstrap/css/bootstrap.css'
+          filters: [yui_css, phpcssembed]
+      bootstrap_datetimepicker_less:
+          inputs:
+              - '%kernel.root_dir%/../vendor/tarruda/bootstrap-datetimepicker/src/less/bootstrap-datetimepicker.less'
+          filters: [lessphp]
