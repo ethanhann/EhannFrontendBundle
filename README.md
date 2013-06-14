@@ -19,6 +19,26 @@ Add EhannFrontEndBundle in your composer.json:
 }
 ```
 
+Download bundle:
+
+``` bash
+$ php composer.phar update ehann/frontend-bundle
+```
+
+Add the EhannFrontendBundle to your AppKernel.php
+
+```php
+public function registerBundles()
+{
+    $bundles = array(
+        ...
+        new Ehann\FrontendBundle\EhannFrontendBundle(),
+        ...
+    );
+    ...
+}
+```
+
 Add the EhannFrontendBundle assetic.yml file into your application config file.
 
 ```yaml
