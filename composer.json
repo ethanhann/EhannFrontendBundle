@@ -2,6 +2,7 @@
     "name": "ehann/frontend-bundle",
     "description": "Provides frontend components and layouts.",
     "version": "0.0.1",
+    "license": "MIT",
     "keywords": ["frontend", "Symfony2", "bundle", "twitter", "bootstrap"],
     "homepage": "http://ethanhann.org",
     "authors": [
@@ -25,7 +26,7 @@
         "components/modernizr": "2.6.2"
     },
     "require-dev": {
-        "symfony/framework-bundle": ">=2.*"
+        "symfony/framework-bundle": "~2.1"
     },
     "autoload": {
         "psr-0": { "Ehann\\FrontendBundle": "" }
