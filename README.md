@@ -2,6 +2,10 @@
 
 Twitter Bootstrap-ready frontend and layout bundle for Symfony2.
 
+## Related Bundles
+
+<a href="https://github.com/ethanhann/EhannNotificationBundle">EhannNotificationBundle</a>
+
 ## Installation
 
 Add EhannFrontEndBundle in your composer.json:
