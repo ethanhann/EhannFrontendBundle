@@ -1,7 +1,7 @@
 {
     "name": "ehann/frontend-bundle",
     "description": "Provides frontend components and layouts.",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "keywords": ["frontend", "Symfony2", "bundle", "twitter", "bootstrap"],
     "homepage": "http://ethanhann.org",
     "authors": [
