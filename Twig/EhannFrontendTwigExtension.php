@@ -1,6 +1,6 @@
 <?php
 
-namespace Ehann\FrontendBundle\DependencyInjection;
+namespace Ehann\FrontendBundle\Twig;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

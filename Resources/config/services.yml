@@ -1,5 +1,5 @@
 parameters:
-    ehann_frontend.twig.extension.class: Ehann\FrontendBundle\DependencyInjection\EhannFrontendTwigExtension
+    ehann_frontend.twig.extension.class: Ehann\FrontendBundle\Twig\EhannFrontendTwigExtension
 
 services:
     ehann_frontend.twig.extension:
