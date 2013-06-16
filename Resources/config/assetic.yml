@@ -39,6 +39,7 @@ assetic:
       bootstrap_css:
           inputs:
               - '%kernel.root_dir%/../components/bootstrap/css/bootstrap.css'
+              - '%kernel.root_dir%/../components/bootstrap/css/bootstrap-responsive.css'
           filters: [yui_css, phpcssembed]
       bootstrap_datetimepicker_less:
           inputs:
