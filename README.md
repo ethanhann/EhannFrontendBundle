@@ -106,6 +106,6 @@ Add these respoistories to your application's composer.json file:
 Specify the global default layout template for all bundles in your application.
 
 ```yaml
-  ehann_html_base:
+  ehann_frontend:
       default_layout: "EhannFrontendBundle:layout:bootstrap.html.twig"
 ```
