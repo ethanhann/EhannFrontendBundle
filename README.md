@@ -24,7 +24,7 @@ This EhannFrontendBundle also has a tricked-out Assetic configuration with vario
 
 ### Related Bundles
 
-<a href="https://github.com/ethanhann/EhannNotificationBundle">EhannNotificationBundle</a>
+<a href="https://github.com/ethanhann/EhannNotificationBundle">EhannNotificationBundle</a> - Utilizes the <a href="http://symfony.com/doc/current/components/http_foundation/sessions.html#flash-messages">Symfony2 flash message feature</a> to add Twitter Bootstrap-ready notifications to your application.
 
 ## Installation
 
