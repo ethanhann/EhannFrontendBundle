@@ -18,11 +18,11 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('ehann_html_base');
+        $rootNode = $treeBuilder->root('ehann_frontend');
 
         /**
          * Config values:
-         * - ehann_html_base.default_layout - default layout filename to use for all application bundles using frontend
+         * - ehann_frontend.default_layout - default layout filename to use for all application bundles using frontend
          */
 
         $rootNode
