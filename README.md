@@ -2,7 +2,27 @@
 
 Twitter Bootstrap-ready frontend and layout bundle for Symfony2.
 
-## Related Bundles
+### Twig Layouts
+
+The bundle provides two Twig templates:
+
+1. Ehann::base.html.twig
+2. Ehann:layouts:bootstrap.html.twig
+
+The __Ehann::base.html.twig__ template contains a boilerplate set of Twig blocks and the Modernizr library (version set in composer.json).
+
+The __Ehann:layouts:bootstrap.html.twig__ template exteneds the Ehann::base.html.twig template and adds __jQuery__, __Twitter Bootstrap__, __Font-Awesome__, __Bootbox__, and __Bootstrap DateTime Picker__. With the exception of Font-Awesome, the versions of all of these libraries are controlled by the EhannFrontendBundle's composer.json file. Font-Awesome is not installed via composer because of limitations with Assetic - there does not appear to be a way to rewrite fonts using Assetic. This means that Font-Awesome cannot locate its font files - not so awesome.
+
+### Assetic Filters
+This EhannFrontendBundle also has a tricked-out Assetic configuration with various configured filters for your use. The tools associated with these filters are downloaded when you install the module. The filters are:
+
+1. phpcssembed
+2. yui_css
+3. yui_js
+4. lessphp
+5. scssphp
+
+### Related Bundles
 
 <a href="https://github.com/ethanhann/EhannNotificationBundle">EhannNotificationBundle</a>
 
