@@ -32,5 +32,50 @@
         "psr-0": { "Ehann\\FrontendBundle": "" }
     },
     "minimum-stability": "dev",
-    "target-dir": "Ehann/FrontendBundle"
+    "target-dir": "Ehann/FrontendBundle",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "yui/yui-compressor",
+                "version": "2.4.7",
+                "dist": {
+                    "url": "https://github.com/downloads/yui/yuicompressor/yuicompressor-2.4.7.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "version": "3.2.0",
+                "name": "makeusabrew/bootbox",
+                "source": {
+                    "url": "https://github.com/makeusabrew/bootbox.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "dist": {
+                    "url": "https://github.com/makeusabrew/bootbox/zipball/master",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "version": "v0.0.11",
+                "name": "tarruda/bootstrap-datetimepicker",
+                "source": {
+                    "url": "https://github.com/tarruda/bootstrap-datetimepicker.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "dist": {
+                    "url": "https://github.com/tarruda/bootstrap-datetimepicker/zipball/v0.0.11",
+                    "type": "zip"
+                }
+            }
+        }
+    ]
 }

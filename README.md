@@ -64,7 +64,7 @@ Add the EhannFrontendBundle assetic.yml file into your application config file.
 ```yaml
 # app/config/config.yml
 imports:
-      - { resource: "@EhannFrontendBundle/Resources/config/assetic.yml" }
+    - { resource: "@EhannFrontendBundle/Resources/config/assetic.yml" }
 ```
 
 ### Composer Repositories
@@ -123,9 +123,16 @@ Add these respoistories to your application's composer.json file:
 
 ## Config
 
-Specify the global default layout template for all bundles in your application.
+Specify the global default layout template, making it accessible to all bundles in your application.
 
 ```yaml
-  ehann_frontend:
-      default_layout: "EhannFrontendBundle:layout:bootstrap.html.twig"
+# app/config/config.yml
+ehann_frontend:
+    default_layout: "EhannFrontendBundle:layouts:bootstrap.html.twig"
+```
+
+Extend your own templates by extending the default layout.
+
+```twig
+{% extends ehann_frontend_default_layout  %}
 ```

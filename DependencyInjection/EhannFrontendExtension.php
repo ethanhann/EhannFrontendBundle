@@ -22,7 +22,7 @@ class EhannFrontendExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('ehann_html_base.default_layout', $config['default_layout']);
+        $container->setParameter('ehann_frontend.default_layout', $config['default_layout']);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');

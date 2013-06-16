@@ -1,6 +1,6 @@
 <?php
 
-namespace Ehann\FrontendBundle\DependencyInjection;
+namespace Ehann\FrontendBundle\Twig;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -37,10 +37,10 @@ class EhannFrontendTwigExtension extends \Twig_Extension
      */
     public function getGlobals()
     {
-        $defaultLayout = $this->container->getParameter('ehann_html_base.default_layout');
+        $defaultLayout = $this->container->getParameter('ehann_frontend.default_layout');
 
         return array(
-            'ehann_html_base_default_layout' => $defaultLayout,
+            'ehann_frontend_default_layout' => $defaultLayout,
         );
     }
 
@@ -51,6 +51,6 @@ class EhannFrontendTwigExtension extends \Twig_Extension
      */
     public function getName()
     {
-        return 'ehann_html_base_twig';
+        return 'ehann_frontend_twig';
     }
 }
