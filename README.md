@@ -89,7 +89,7 @@ Add these respoistories to your application's composer.json file:
     {
         "type": "package",
         "package": {
-            "version": "3.2.0",
+            "version": "v3.2.0",
             "name": "makeusabrew/bootbox",
             "source": {
                 "url": "https://github.com/makeusabrew/bootbox.git",
@@ -97,7 +97,7 @@ Add these respoistories to your application's composer.json file:
                 "reference": "master"
             },
             "dist": {
-                "url": "https://github.com/makeusabrew/bootbox/zipball/master",
+                "url": "https://github.com/makeusabrew/bootbox/zipball/v3.2.0",
                 "type": "zip"
             }
         }
