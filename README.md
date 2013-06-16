@@ -107,5 +107,5 @@ Specify the global default layout template for all bundles in your application.
 
 ```yaml
   ehann_frontend:
-      default_layout: "EhannFrontendBundle:layout:bootstrap.html.twig"
+      default_layout: "EhannFrontendBundle:layouts:bootstrap.html.twig"
 ```
