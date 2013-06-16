@@ -48,7 +48,7 @@
         {
             "type": "package",
             "package": {
-                "version": "3.2.0",
+                "version": "v3.2.0",
                 "name": "makeusabrew/bootbox",
                 "source": {
                     "url": "https://github.com/makeusabrew/bootbox.git",
@@ -56,7 +56,7 @@
                     "reference": "master"
                 },
                 "dist": {
-                    "url": "https://github.com/makeusabrew/bootbox/zipball/master",
+                    "url": "https://github.com/makeusabrew/bootbox/zipball/v3.2.0",
                     "type": "zip"
                 }
             }

@@ -4,14 +4,18 @@ Twitter Bootstrap-ready frontend and layout bundle for Symfony2.
 
 ### Twig Layouts
 
-The bundle provides two Twig templates:
+The bundle provides two Twig templates for layouts (you can extend either or both):
 
-1. Ehann::base.html.twig
-2. Ehann:layouts:bootstrap.html.twig
+1. EhannFrontendBundle::base.html.twig
+2. EhannFrontendBundle:layouts:bootstrap.html.twig
 
-The __Ehann::base.html.twig__ template contains a boilerplate set of Twig blocks and the Modernizr library (version set in composer.json).
+The __EhannFrontendBundle::base.html.twig__ template contains a boilerplate set of Twig blocks and the Modernizr library (version set in composer.json).
 
-The __Ehann:layouts:bootstrap.html.twig__ template exteneds the Ehann::base.html.twig template and adds __jQuery__, __Twitter Bootstrap__, __Font-Awesome__, __Bootbox__, and __Bootstrap DateTime Picker__. With the exception of Font-Awesome, the versions of all of these libraries are controlled by the EhannFrontendBundle's composer.json file. Font-Awesome is not installed via composer because of limitations with Assetic - there does not appear to be a way to rewrite fonts using Assetic. This means that Font-Awesome cannot locate its font files - not so awesome.
+The __EhannFrontendBundle:layouts:bootstrap.html.twig__ template extends the EhannFrontendBundle::base.html.twig template and adds __jQuery__, __Twitter Bootstrap__, __Font-Awesome__, __Bootbox__, and __Bootstrap DateTime Picker__. With the exception of Font-Awesome, the versions of all of these libraries are controlled by the EhannFrontendBundle's composer.json file. Font-Awesome is not installed via composer because of limitations with Assetic - there does not appear to be a way to rewrite fonts using Assetic. This means that Font-Awesome cannot locate its font files if it is installed outside of a bundle without a filesystem/symlink hack.
+
+### Bootstrap Forms
+
+Twitter Bootstrap expects the HTML in forms to be structured in a specific way. When you include the __EhannFrontendBundle:forms:bootstrap_form_layout.html.twig__ template, the HTML in Twig's default form blocks are restructured to be Twitter Bootstrap-compatible.
 
 ### Assetic Filters
 This EhannFrontendBundle also has a tricked-out Assetic configuration with various configured filters for your use. The tools associated with these filters are downloaded when you install the module. The filters are:
@@ -24,7 +28,7 @@ This EhannFrontendBundle also has a tricked-out Assetic configuration with vario
 
 ### Related Bundles
 
-<a href="https://github.com/ethanhann/EhannNotificationBundle">EhannNotificationBundle</a>
+<a href="https://github.com/ethanhann/EhannNotificationBundle">EhannNotificationBundle</a> - Utilizes the <a href="http://symfony.com/doc/current/components/http_foundation/sessions.html#flash-messages">Symfony2 flash message feature</a> to add Twitter Bootstrap-ready notifications to your application.
 
 ## Installation
 
@@ -89,7 +93,7 @@ Add these respoistories to your application's composer.json file:
     {
         "type": "package",
         "package": {
-            "version": "3.2.0",
+            "version": "v3.2.0",
             "name": "makeusabrew/bootbox",
             "source": {
                 "url": "https://github.com/makeusabrew/bootbox.git",
@@ -97,7 +101,7 @@ Add these respoistories to your application's composer.json file:
                 "reference": "master"
             },
             "dist": {
-                "url": "https://github.com/makeusabrew/bootbox/zipball/master",
+                "url": "https://github.com/makeusabrew/bootbox/zipball/v3.2.0",
                 "type": "zip"
             }
         }
