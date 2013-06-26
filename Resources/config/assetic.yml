@@ -30,7 +30,7 @@ assetic:
           filters: [yui_js]
       bootstrap_datetimepicker_js:
           inputs:
-              - '%kernel.root_dir%/../vendor/tarruda/bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js'
+              - '%kernel.root_dir%/../vendor/tarruda/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'
           filters: [yui_js]
       modernizr_js:
           inputs:
@@ -41,7 +41,6 @@ assetic:
               - '%kernel.root_dir%/../components/bootstrap/css/bootstrap.css'
               - '%kernel.root_dir%/../components/bootstrap/css/bootstrap-responsive.css'
           filters: [yui_css, phpcssembed]
-      bootstrap_datetimepicker_less:
+      bootstrap_datetimepicker_css:
           inputs:
-              - '%kernel.root_dir%/../vendor/tarruda/bootstrap-datetimepicker/src/less/bootstrap-datetimepicker.less'
-          filters: [lessphp]
+              - '%kernel.root_dir%/../vendor/tarruda/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css'
