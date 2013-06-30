@@ -1,0 +1,2 @@
+hello_bundle:
+    resource: "@EhannFrontendBundle/Resources/config/routing.yml"

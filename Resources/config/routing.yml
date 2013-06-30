@@ -1,3 +1,7 @@
-ehannfrontendbundle_bootstrap:
+ehannfrontendbundle_bootstrap_example:
   pattern: /bootstrap
-  defaults: { _controller: EhannFrontendBundle:Default:bootstrap }
+  defaults: { _controller: EhannFrontendBundle:Example:bootstrap }
+
+ehannfrontendbundle_base_example:
+  pattern: /base
+  defaults: { _controller: EhannFrontendBundle:Example:base }
