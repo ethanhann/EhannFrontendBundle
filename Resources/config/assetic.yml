@@ -19,28 +19,28 @@ assetic:
       jquery_js:
           inputs:
               - '%kernel.root_dir%/../components/jquery/jquery.js'
-          filters: [yui_js]
+          filters: [?yui_js]
       bootstrap_js:
           inputs:
               - '%kernel.root_dir%/../components/bootstrap/js/bootstrap.js'
-          filters: [yui_js]
+          filters: [?yui_js]
       bootbox_js:
           inputs:
               - '%kernel.root_dir%/../vendor/makeusabrew/bootbox/bootbox.js'
-          filters: [yui_js]
+          filters: [?yui_js]
       bootstrap_datetimepicker_js:
           inputs:
               - '%kernel.root_dir%/../vendor/tarruda/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js'
-          filters: [yui_js]
+          filters: [?yui_js]
       modernizr_js:
           inputs:
               - '%kernel.root_dir%/../components/modernizr/modernizr.js'
-          filters: [yui_js]
+          filters: [?yui_js]
       bootstrap_css:
           inputs:
               - '%kernel.root_dir%/../components/bootstrap/css/bootstrap.css'
               - '%kernel.root_dir%/../components/bootstrap/css/bootstrap-responsive.css'
-          filters: [yui_css, phpcssembed]
+          filters: [?yui_css, phpcssembed]
       bootstrap_datetimepicker_css:
           inputs:
               - '%kernel.root_dir%/../vendor/tarruda/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css'
